@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    /*Dia*/
+<TextView
+    android:id="@+id/day1"
+    android:background="@color/colorWhite"
+    android:textColor="@color/colorRed"
+    android:textStyle="bold"
+    android:layout_width="100dp"
+    android:layout_height="80dp"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="40dp"
+    android:layout_centerVertical="true"
+    tools:text = "7"
+    android:gravity="center"
+    android:textSize="50dp"
+     />
+
+    /*Hora*/
+<TextView
+        android:id="@+id/hour1"
+        android:layout_toRightOf="@id/day1"
+        android:layout_toEndOf="@id/day1"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorRed"
+        android:textStyle="bold"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="25dp"
+        android:layout_centerVertical="true"
+        tools:text = "1"
+        android:gravity="center"
+        android:textSize="50dp"
+        />
+    /*Minuto*/
+<TextView
+        android:id="@+id/minute1"
+        android:layout_toRightOf="@id/hour1"
+        android:layout_toEndOf="@id/hour1"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorRed"
+        android:textStyle="bold"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="25dp"
+        android:layout_centerVertical="true"
+        tools:text = "0"
+        android:gravity="center"
+        android:textSize="50dp"
+        />
+    /*Segundo*/
+<TextView
+        android:id="@+id/second1"
+        android:layout_toRightOf="@id/minute1"
+        android:layout_toEndOf="@id/minute1"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorRed"
+        android:textStyle="bold"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="25dp"
+        android:layout_centerVertical="true"
+        tools:text = "4"
+        android:gravity="center"
+        android:textSize="50dp"
+        />
+
+    /*Titulos*/
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/day1"
+        android:layout_alignStart="@id/day1"
+        android:text="DAYS"
+        android:layout_above="@id/day1"
+        android:layout_marginBottom="30dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorRed"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/hour1"
+        android:text="HOURS"
+        android:layout_above="@id/day1"
+        android:layout_marginBottom="30dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorRed"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/minute1"
+        android:text="MINUTES"
+        android:layout_above="@id/day1"
+        android:layout_marginBottom="30dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorRed"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/second1"
+        android:text="SECONDS"
+        android:layout_above="@id/day1"
+        android:layout_marginBottom="30dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorRed"
+        />
+</RelativeLayout>
